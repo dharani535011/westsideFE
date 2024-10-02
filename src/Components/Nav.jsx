@@ -82,9 +82,9 @@ const Nav = () => {
         <div className={`hamburgar ${open?"hamc":"hamr"}`} onClick={()=>{setopen(!open)
           settab(!tab)
         }}>
-            <p  className='li1' ></p>
-            <p className='li2'></p>
-            <p className='li3'></p>
+            <p  className='li1' style={{height:".6px",backgroundColor:"black"}} ></p>
+            <p className='li2' style={{height:".6px",backgroundColor:"black"}}></p>
+            <p className='li3' style={{height:".6px",backgroundColor:"black"}}></p>
         </div>
       </div>
    
