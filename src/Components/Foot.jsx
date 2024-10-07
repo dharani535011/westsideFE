@@ -1,6 +1,6 @@
 import React from 'react'
-import f1 from "../../public/frame_2.svg"
-import f2 from "../../public/frame_3.svg"
+import f1 from "../../public/Frame_2.svg"
+import f2 from "../../public/Frame_3.svg"
 
 const Foot = () => {
   return (
