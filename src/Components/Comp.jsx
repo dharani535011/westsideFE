@@ -62,7 +62,7 @@ const Comp = ({ imgs }) => {
     if (autoSlideRef.current) {
       clearInterval(autoSlideRef.current);
     }
-  };
+  }
 
   // Attach event listeners for mouse move and mouse up during drag
   useEffect(() => {
