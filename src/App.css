@@ -151,6 +151,7 @@ body{
     height: fit-content;
     overflow-y: scroll;
     display: none;
+    z-index: 999;
 }
 .details{
     padding: 2%;
@@ -272,16 +273,31 @@ span{
         border-bottom: 1.5px solid;
     }
 }
-.bc{
-    margin: 0;
-    background-image: url("../public/bc1.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    width: 100vw;
-    height: 100vh;
+
+.cusbody{
+    span{
+           i{
+            transition: all .2s ease;
+           }
+    }
+    span{
+        i:hover{
+            transform: scale(1.25);
+        }
+    }
 }
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
 .opentab{
     /* display: none; */
     position: fixed;
@@ -289,6 +305,13 @@ span{
 }
 .cusbar{
     display: none;
+}
+@media screen and (max-width:768px) {
+       .bc{
+        img{
+            object-position: left;
+        }
+       }
 }
 @media screen and (max-width:1027px) {
 

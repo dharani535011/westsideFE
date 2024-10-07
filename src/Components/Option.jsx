@@ -43,7 +43,7 @@ const Option = () => {
 
     return (
         <>
-            <div className={`options ${lastScrollTop == 0 || scrollDirection == "up" ? "opup" : "opdown"}`} style={{ backgroundColor: up || lastScrollTop !== 0 ? "white" : "transparent" }}>
+            <div className={`options ${lastScrollTop == 0 || scrollDirection == "up" ? "opup" : "opdown"}`} style={{ backgroundColor: up || lastScrollTop !== 0 ? "white" : "transparent",zIndex:"999" }}>
                 <div className='obody'>
                     <span onMouseEnter={() => setup(1)} onClick={() => setup((pre) => pre === 1 ? 0 : 1)} onMouseLeave={() => setup(0)} style={{ borderBottom: up == 1 ? "2px solid black" : "2px solid transparent" }}><p>Woman</p><i className={`fa-solid fa-angle-${up == 1 ? "up" : "down"}`}></i></span>
                     <span onMouseEnter={() => setup(2)} onClick={() => setup((pre) => pre === 2 ? 0 : 2)} onMouseLeave={() => setup(0)} style={{ borderBottom: up == 2 ? "2px solid black" : "2px solid transparent" }}><p>Man</p><i className={`fa-solid fa-angle-${up == 2 ? "up" : "down"}`}></i></span>
@@ -1132,7 +1132,7 @@ const Option = () => {
             </div>
              <div className="cusbar">
                 <div className="cusbody">
-                      <span><i className="fa-solid fa-house"></i><p>Home</p></span>
+                      <span ><i className="fa-solid fa-house"></i><p>Home</p></span>
                       <span><i className="fa-solid fa-border-all"></i><p>Categories</p></span>
                       <span onClick={()=>setsearch(true)}><i className="fa-solid fa-magnifying-glass"></i><p>Search</p></span>
                       <span><i className="fa-solid fa-cart-shopping"></i><p>Bag</p></span>
