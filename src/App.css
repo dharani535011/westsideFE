@@ -321,7 +321,7 @@ span{
 }
 .cb2{
     padding: 10px 20px;
-    right: 10px;
+    right: 0px;
 } 
   
    .foot{
@@ -522,7 +522,9 @@ span{
       }
 }
 @media screen and (max-width:768px) {
-
+     .cb2{
+        right: -22px;
+     }
        .bc{
         img{
             object-position: left;
